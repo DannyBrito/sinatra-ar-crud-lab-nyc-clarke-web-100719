@@ -1,0 +1,7 @@
+EDIT ARTICLE
+<form action="/articles/<%= @ins_article.id %>" method="post">
+<input id="hidden" type="hidden" name="_method" value="patch">
+NEW Article's Title: <input type="text" name="title"> value="<%= @ins_article.title %>" <br>
+NEW Article's Content: <input type="text" value="<%= @ins_article.content %>" name="content">
+<input type="submit" value="update">
+</form>
